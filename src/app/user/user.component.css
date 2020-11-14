@@ -1,0 +1,18 @@
+.login{
+    background-image: url('./../../assets/d6j9ongwaam4yrm.webp');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+.loginApp{
+    display: flex;
+    border: 1px solid grey;
+    width: 500px;
+}
+.loginForm{
+    margin-left: 20px;
+}
+.loginApp p{
+    margin-left: 20px;
+}
