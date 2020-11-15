@@ -1,4 +1,32 @@
-body{
+.userLogin{
     background-color: #2F3038;
-    height: 500px;
-}    
+} 
+.gitIcon{
+    margin-top: 200px;
+}   
+form{
+    margin-bottom: 200px;
+}
+.userInfo{
+    background-color: ghostwhite;
+}
+.loginForm p{
+    color: white;
+}
+.gitIcon img{
+    height: 100px;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+/* .rowUser{
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.profileuser img{
+    height: 60%;
+} */
+.mb-3{
+    margin-left: 20px;
+}
