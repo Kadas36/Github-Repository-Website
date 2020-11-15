@@ -1,3 +1,13 @@
+html{
+    background-color: dimgrey;
+    height: 580px;
+    background-image: url(./../../assets/git.png
+    );
+}
+body{
+    display: flex;
+    justify-content: center;
+}
 .login{
     background-image: url('./../../assets/d6j9ongwaam4yrm.webp');
     background-repeat: no-repeat;
@@ -8,7 +18,8 @@
 .loginApp{
     display: flex;
     border: 1px solid grey;
-    width: 500px;
+    width: 450px;
+    margin-top: 150px;
 }
 .loginForm{
     margin-left: 20px;
