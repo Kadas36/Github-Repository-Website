@@ -1,29 +1,4 @@
-html{
-    background-color: dimgrey;
-    height: 580px;
-    background-image: url(./../../assets/git.png
-    );
-}
 body{
-    display: flex;
-    justify-content: center;
-}
-.login{
-    background-image: url('./../../assets/d6j9ongwaam4yrm.webp');
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-}
-.loginApp{
-    display: flex;
-    border: 1px solid grey;
-    width: 450px;
-    margin-top: 150px;
-}
-.loginForm{
-    margin-left: 20px;
-}
-.loginApp p{
-    margin-left: 20px;
-}
+    background-color: #2F3038;
+    height: 500px;
+}    

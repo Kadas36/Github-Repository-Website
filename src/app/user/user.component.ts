@@ -9,11 +9,8 @@ import { GithubServiceService } from '../github-service.service';
 })
 export class UserComponent implements OnInit {
 
-  username = 'kadas36';
-  user = new User('kadas36', 0, '');
-
-  // username: any;
-
+  username = '';
+  user = new User('', 0, '');
 
   constructor(
     private service: GithubServiceService,
@@ -26,7 +23,7 @@ export class UserComponent implements OnInit {
     this.fetchRepos();
   }
 
-  fetchUsers() {
+  fetchUsers(): any {
     this.service.getData(this.user.name).subscribe(
       data => {
         this.fetchedUser = data;
