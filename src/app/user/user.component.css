@@ -1,32 +1,39 @@
-.userLogin{
-    background-color: #2F3038;
-} 
-.gitIcon{
-    margin-top: 200px;
-}   
-form{
-    margin-bottom: 200px;
+.userLogin {
+  background-color: #2f3038;
 }
-.userInfo{
-    background-color: ghostwhite;
+.gitIcon {
+  margin-top: 200px;
 }
-.loginForm p{
-    color: white;
+form {
+  margin-bottom: 200px;
 }
-.gitIcon img{
-    height: 100px;
+.userInfo {
+  background-color: ghostwhite;
 }
-h2{
+.loginForm p {
+  color: white;
+}
+.gitIcon img {
+  height: 100px;
+}
+h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px; 
+}
+.mb-3 {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.card{
+    width: 900px;
     text-align: center;
-    font-weight: bold;
 }
-/* .rowUser{
-    border: 1px solid grey;
-    border-radius: 5px;
-}
-.profileuser img{
-    height: 60%;
-} */
-.mb-3{
-    margin-left: 20px;
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-left: 50px;
 }
