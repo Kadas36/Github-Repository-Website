@@ -1,4 +1,6 @@
+import { User } from './../user';
 import { Component, OnInit } from '@angular/core';
+import { GithubServiceService } from '../github-service.service';
 
 @Component({
   selector: 'app-user',
@@ -7,9 +9,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  constructor() { }
+  username = 'kadas36';
+  user = new User('kadas36', 0, '');
+
+  // username: any;
+
+
+  constructor(
+    private service: GithubServiceService,
+  ) { }
+
+  fetchedUser: any;
 
   ngOnInit(): void {
+    this.fetchUsers();
+    this.fetchRepos();
   }
+
+  fetchUsers() {
+    this.service.getData(this.user.name).subscribe(
+      data => {
+        this.fetchedUser = data;
+        console.log(data);
+      }
+    );
+  }
+
+  fetchRepos() {
+    this.service.getRepos(this.user.name).subscribe(
+      data => {
+        console.log(data);
+      }
+    );
+  }
+
 
 }
