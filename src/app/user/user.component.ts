@@ -9,7 +9,6 @@ import { GithubServiceService } from '../github-service.service';
 })
 export class UserComponent implements OnInit {
 
-  username = 'kadas36';
   user = new User('kadas36', 0, '');
 
   constructor(
@@ -20,7 +19,6 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {
     this.fetchUsers();
-    this.fetchRepos();
   }
 
   fetchUsers(): any {
@@ -31,14 +29,5 @@ export class UserComponent implements OnInit {
       }
     );
   }
-
-  fetchRepos() {
-    this.service.getRepos(this.user.name).subscribe(
-      data => {
-        console.log(data);
-      }
-    );
-  }
-
 
 }

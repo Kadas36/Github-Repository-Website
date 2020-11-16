@@ -1,3 +1,3 @@
 export class Repository {
-    constructor(public name: string, public description: number, public urlLink: string) {};
+    constructor(public name: string, public description: string, public urlLink: string) {};
 }
