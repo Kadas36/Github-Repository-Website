@@ -1,39 +1,31 @@
-import { User } from './../user';
 import { Repository } from './../repository';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges} from '@angular/core';
 import { GithubServiceService } from '../github-service.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-repositories',
   templateUrl: './repositories.component.html',
   styleUrls: ['./repositories.component.css']
 })
-export class RepositoriesComponent implements OnInit {
-  user = new User('kadas36', 0, '');
+
+export class RepositoriesComponent implements OnChanges {
+  @Input() username: string;
+
+  repos: any = [];
 
   constructor(
     private service: GithubServiceService,
   ) { }
 
-  fetchedUser: any;
-
-  ngOnInit(): void {
-    this.fetchUsers();
+  ngOnChanges(): void {
     this.fetchRepos();
   }
 
-  fetchUsers(): any {
-    this.service.getData(this.user.name).subscribe(
+  fetchRepos(): any {
+    this.service.getRepos(this.username).subscribe(
       data => {
-        this.fetchedUser = data;
-        console.log(data);
-      }
-    );
-  }
-
-  fetchRepos() {
-    this.service.getRepos(this.user.name).subscribe(
-      data => {
+        this.repos = data;
         console.log(data);
       }
     );
