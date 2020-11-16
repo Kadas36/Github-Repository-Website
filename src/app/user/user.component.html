@@ -21,7 +21,6 @@
         </div>
         <div class="col-md-9 userInfo">
           <h2>Github user information</h2>
-          <app-repositories [username]="user.name"></app-repositories>
           <hr>
           <div class="row rowUser">
             <div class="card mb-3">
@@ -46,6 +45,7 @@
           </div>
         </div>
       </div>
+      <app-repositories [username]="user.name"></app-repositories>
     </div>
   </body>
 </html>
