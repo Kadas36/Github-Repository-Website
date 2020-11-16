@@ -1,27 +1,19 @@
-# Github
+# Github-Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+#### This application retrieves a github user's informtion. The application also retrieves repositories associated with the user. © 2020.
 
-## Development server
+#### By **Thomas Oduor**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Setup/Installation Requirements
+* Open the live link
+* Input your github username.
+* The application automatically displays data.
 
-## Code scaffolding
+# Development
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Live link
+https://kadas36.github.io/Quotes-Application/
+## Support and contact details
+Incase of any troubles with the site email me at oduorthomas14@gmail.com
